@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .apple-button-primary {
+    @apply bg-apple-blue text-white px-6 py-3 rounded-full text-17 font-medium hover:bg-blue-600 transition-colors duration-200;
+  }
+  
+  .apple-button-secondary {
+    @apply border border-apple-blue text-apple-blue px-6 py-3 rounded-full text-17 font-medium hover:bg-apple-blue hover:text-white transition-all duration-200;
+  }
+  
+  .apple-nav-link {
+    @apply text-white text-sm font-normal hover:text-gray-300 transition-colors duration-200;
+  }
+  
+  .apple-section-title {
+    @apply text-48 md:text-56 font-semibold text-center mb-4;
+  }
+  
+  .apple-section-subtitle {
+    @apply text-21 md:text-24 text-center mb-8;
+  }
+}
